@@ -1,0 +1,39 @@
+{
+  "name": "plant-guardian",
+  "version": "1.0.0",
+  "description": "NPM Setup for Raspberry Pi Plant Guardian.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "server": "gulp serve",
+    "watch": "gulp watch",
+    "build:css": "gulp stylus",
+    "build:js": "gulp ecmascript"
+  },
+  "author": "Jonathan Lundström (http://jonathanlundstrom.me)",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer-stylus": "^0.13.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "express": "^4.15.3",
+    "flot": "^0.8.0-alpha",
+    "flot.curvedlines": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.1.0",
+    "jquery": "^3.2.1",
+    "nunjucks": "^3.0.1",
+    "serialport": "^4.0.7",
+    "socket.io": "^2.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

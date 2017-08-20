@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<title>Plant Guardian</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="/include/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/include/css/bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:300,300i,400,700,900">
+	
+	<!-- Apple standalone meta -->
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="Hubbit" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<!-- Apple standalone icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/include/img/icons/icon-152.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/include/img/icons/icon-144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/include/img/icons/icon-120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/include/img/icons/icon-114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/include/img/icons/icon-76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/include/img/icons/icon-72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/include/img/icons/icon-57.png" />
+	
+	<!-- iPad retina portrait startup image -->
+	<link href="/include/img/splash/splash-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-2048x1496.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-1024x748.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-2208x1182.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image" /
+	<link href="/include/img/splash/splash-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/include/img/splash/splash-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image" />
+	
+	<!-- Android standalone meta -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="icon" sizes="128x128" href="/include/img/icons/icon-128.png" />
+	<link rel="icon" sizes="192x192" href="/include/img/icons/icon-192.png" />
+</head>
+<body>
+	<header class="header">
+		<img class="header__logotype" src="/include/img/conrad.svg" alt="Conrad" />
+	</header>
+	
+	<div class="sensors">
+		<div class="sensors__sensor">
+			<small class="sensors__title">Plant #1</small>
+			<span class="sensors__value" data-sensor-one>0%</span>
+			<p class="sensors__status"></p>
+		</div>
+		
+		<div class="sensors__sensor">
+			<small class="sensors__title">Plant #2</small>
+			<h2 class="sensors__value" data-sensor-two>0%</h2>
+			<p class="sensors__status"></p>
+		</div>
+	</div>
+	
+	<div class="chart">
+		<!-- Dynamic chart replacement -->
+	</div>
+	
+	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="/node_modules/flot/jquery.flot.js"></script>
+	<script src="/node_modules/flot/jquery.flot.resize.js"></script>
+	<script src="/node_modules/flot.curvedlines/curvedLines.js"></script>
+	
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/include/js/bundle.min.js"></script>
+</body>
+</html>

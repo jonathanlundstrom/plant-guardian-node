@@ -1,0 +1,9 @@
+.idea
+node_modules
+npm-debug.log
+
+include/js/bundle.min.js
+include/css/bundle.min.css
+
+include/js/bundle.min.js.map
+include/css/bundle.min.css.map
